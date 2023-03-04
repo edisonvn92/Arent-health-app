@@ -1,0 +1,32 @@
+.icon {
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: content;
+    -webkit-mask-size: contain;
+    padding: auto;
+}
+  
+.icon-challenge {
+    mask-image: url('../../assets/icons/icon_challenge.svg');
+}
+
+.icon-cup {
+    mask-image: url('../../assets/icons/icon_cup.svg');
+}
+
+.icon-info {
+    mask-image: url('../../assets/icons/icon_info.svg');
+}
+
+.icon-knife {
+    mask-image: url('../../assets/icons/icon_knife.svg');
+}
+
+.icon-memo {
+    mask-image: url('../../assets/icons/icon_memo.svg');
+}
+
+.icon-menu {
+    mask-image: url('../../assets/icons/icon_menu.svg');
+}
+

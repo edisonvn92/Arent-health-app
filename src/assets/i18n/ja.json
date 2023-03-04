@@ -1,0 +1,58 @@
+{
+    "base": {
+        "day": "日",
+        "week": "週",
+        "month": "月",
+        "year": "年",
+        "standing": "立位",
+        "light": "軽い"
+    },
+    "en": {
+        "morning": "Morning",
+        "lunch": "Lunch",
+        "dinner": "Dinner",
+        "snack": "Snack",
+        "body_record": "Body Record",
+        "my_exercise": "My Exercise",
+        "my_diary": "My Diary",
+        "recommended_column": "Recommended Column",
+        "recommended_diet": "Recommended Diet",
+        "recommended_beauty": "Recommended Beauty",
+        "recommended_health": "Recommended Health"
+
+    },
+    "navbar": {
+        "my_record": "自分の記録",
+        "challenge": "チャレンジ",
+        "notice": "お知らせ",
+        "weight_chart": "体重グラフ",
+        "goal": "目標",
+        "selected_course": "選択中のコース",
+        "column_list": "コラム一覧",
+        "settings": "設定"
+    },
+    "footer": {
+        "member_registration": "会員登録",
+        "operating_company": "運営会社",
+        "term_of_service": "利用規約",
+        "handling_of_personal_info": "個人情報の取扱について",
+        "specified_commercial_transactions_act_notations": "特定商取引法に基づく表記",
+        "inquiry": "お問い合わせ"
+    },
+    "home": {
+        "see_more_records": "記録をもっと見る"
+    },
+    "record": {
+        "general_household_chore": "家事全般",
+        "see_more_of_my_diary": "自分の日記をもっと見る"
+    },
+    "column": {
+        "recommendation": "オススメ",
+        "diet": "ダイエット",
+        "beauty": "美容",
+        "health": "健康",
+        "fish_dishes": "魚料理",
+        "japanese_food": "和食",
+        "see_more_column": "コラムをもっと見る"
+    }
+}
