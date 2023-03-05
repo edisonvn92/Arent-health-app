@@ -1,9 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app/styles/color';
-// @import './app/styles/spacing';
+@import './app/styles/spacing';
 @import './app/styles/icons';
 @import './app/styles/button';
+@import './app/styles/fonts';
+@import './app/styles/size';
+@import './app/styles/scroll';
 
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
 
+* {
+    font-family: 'NotoSanJP', sans-serif;
+    color: $black-600;
+    &.en-font {
+        font-family: 'Inter', sans-serif !important;
+    }
+}
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';

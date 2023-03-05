@@ -1,1 +1,44 @@
-<p>home works!</p>
+<div class="d-flex">
+    <div class="progress-div d-flex justify-content-center pt-67">
+        <circle-progress
+            [percent]="completeRate"
+            [title]="currentDate"
+            [titleFontSize]="'18px'"
+            [titleColor]="'white'"
+            [units]="completeRate + '%'"
+            [unitsFontSize]="'25px'"
+            [showSubtitle]="false"
+        >
+        </circle-progress>
+    </div>
+    <div class="chart-body">
+        <app-body-fat-chart [divHeight]="'314px'" [backgroundColorClass]="'bg-black-600'"></app-body-fat-chart>
+    </div>
+    
+</div>
+<div class="transit-to-input d-flex justify-content-center">
+    <div class="hexagon" *ngFor="let item of inputList">
+        <div class="icon icon-color-white input-icon" [ngClass]="item.iconClass"></div>
+        <span class="text-white fs-20">{{item.text | translate }}</span>
+    </div>
+</div>
+<div class="caption-images">
+    <div class="d-flex justify-content-center" *ngFor="let row of captionImageList">
+        <div *ngFor="let item of row" class="m-4">
+            <app-caption-image 
+                [imageSrc]="item.src"
+                [caption]="item.caption"
+                [imageWidth]="'234px'"
+                [aspectRatio]="'1/1'">
+            </app-caption-image>
+        </div>
+        
+    </div>
+    
+</div>
+
+<div class="d-flex mt-20 mb-64 justify-content-center">
+    <button class="btn customized-btn">
+        {{'home.see_more_records' | translate}}
+    </button>
+</div>

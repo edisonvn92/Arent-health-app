@@ -1,27 +1,30 @@
 # ArentFrontendTest
+This project is developed using Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+## Version
+- NodeJS: 18.14.2
+- npm: 9.5.0
+- Angular: 15.2.0
+- Bootstrap: 5.2.3
+- Popperjs: 2.11.6
+- Ng-Bootstrap: 14.0.1
+- MomentJS: 2.29.4
+- Amcharts: 4.10.34
+- Ng-circle-progress: 1.7.1
 
-## Development server
+## Time
+- Time to build the base: 2hr
+- Time to do research for design and library: 3 ~ 4hr
+- Time to code the components: 8 ~ 9hr
+- Time working in total: 12 ~ 14hr
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Install package
+- If local NodeJS version is different, install nvm to manage NodeJS version (https://github.com/nvm-sh/nvm)
+- Run `npm install` to install packages
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Local Development
+- Run `npm run start` to create local server.
+- Navigate to `http://localhost:4200/`.
 
 ## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `npm run build` to build the project. The build artifacts are stored in the `dist/` directory.

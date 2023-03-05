@@ -1,0 +1,23 @@
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.recommend-card {
+    border-radius: 0;
+
+}
+
+.article-div {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.article-card {
+    border-radius: 0;
+    aspect-ratio: 1/1;
+    border: none;
+    .text-div {
+        overflow: hidden;
+    }
+}

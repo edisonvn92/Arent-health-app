@@ -1,0 +1,17 @@
+@import '../../../styles/color';
+figure {
+    margin: 0 !important;
+    margin-bottom: -32px !important;
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+    caption {
+        position: relative;
+        bottom: 32px;
+        height: 32px;
+        padding:4px 10px 7px 8px;
+        left: 0;
+        background-color: $yellow;
+    }
+}

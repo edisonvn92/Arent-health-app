@@ -43,6 +43,9 @@
         "see_more_records": "記録をもっと見る"
     },
     "record": {
+        "my_body_record": "自分のカラダの記録",
+        "my_exercise_record": "自分の運動の記録",
+        "my_diary": "自分の日記",
         "general_household_chore": "家事全般",
         "see_more_of_my_diary": "自分の日記をもっと見る"
     },

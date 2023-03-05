@@ -1,0 +1,37 @@
+@import '../../styles/color';
+
+.progress-div {
+    background-image: url('../../../assets/images/d01.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 316px;
+    width: 540px;
+}
+.chart-body {
+    height: 316px;
+    flex-grow: 2;
+}
+.transit-to-input {
+    padding: 22px;
+    gap: 6.5%;
+}
+.hexagon {
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    width: 116px;
+    height: 134px;
+    background: linear-gradient(65.89deg, $yellow 8.26%, $orange 91.18%);
+    text-align: center;
+
+    .input-icon {
+        position: relative;
+        top: 33px;
+        left: 32px;
+        height: 45px;
+        width: 53px;
+    }
+
+    span {
+        position: relative;
+        top: 28px;
+    }
+}

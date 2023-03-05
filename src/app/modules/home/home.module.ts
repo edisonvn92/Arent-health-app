@@ -1,17 +1,24 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-
+import { SharedModule } from 'src/app/shared/shared.module';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
     HomeComponent
   ],
   imports: [
-    CommonModule,
-    HomeRoutingModule
+    SharedModule,
+    HomeRoutingModule,
+    NgCircleProgressModule.forRoot({
+      radius: 90,
+      outerStrokeWidth: 5,
+      outerStrokeColor: 'white',
+      showInnerStroke: false,
+      unitsColor: 'white'
+    })
   ]
 })
 export class HomeModule { }

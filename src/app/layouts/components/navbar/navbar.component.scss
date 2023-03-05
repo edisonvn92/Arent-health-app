@@ -1,0 +1,43 @@
+@import '/src/styles.scss';
+
+.logo-image {
+    height: 46px;
+}
+.nav-icon {
+    width: 24px;
+    height: 26px;
+}
+
+.noti-icon {
+    position: relative;
+    top: -5px;
+    right: 10px;
+
+    background-color: $dark-orange;
+    font-size: 10px;
+    border-radius: 100%;
+    height: 14px;
+    width: 14px;
+    color: $white;
+    text-align: center;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+    .dropdown-item {
+        width: 280px;
+        border-bottom: 1px solid #666666 !important;
+        &:nth-of-type(1) {
+            border-bottom: none;
+        }
+        &:active, &:focus, &:hover {
+            background-color: #ffffff8c !important;
+    
+        }
+    }
+}

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./go-to-top-button.component.scss']
 })
 export class GoToTopButtonComponent {
-
+  goToTop() {
+    window.scrollTo({top: 0});
+  }
 }

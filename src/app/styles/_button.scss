@@ -1,0 +1,9 @@
+.btn {
+    &.customized-btn {
+        background: linear-gradient(32.95deg, $yellow 8.75%, $orange 86.64%);
+        width: 296px;
+        height: 56px;
+        font-size: 18px;
+        color: $white
+    }
+}

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { ColumnListRoutingModule } from './column-list-routing.module';
 import { ColumnListComponent } from './column-list.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -10,7 +10,7 @@ import { ColumnListComponent } from './column-list.component';
     ColumnListComponent
   ],
   imports: [
-    CommonModule,
+    SharedModule,
     ColumnListRoutingModule
   ]
 })

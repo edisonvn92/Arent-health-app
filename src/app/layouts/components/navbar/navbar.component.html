@@ -1,1 +1,49 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand sticky-top bg-black-500 justify-content-around">
+    <a class="navbar-brand" href="">
+        <img src="./assets/icons/site_logo.svg" alt="site-logo" class="logo-image"/>
+    </a>
+
+    <div class="navbar">
+        <ul class="navbar-nav mr-40">
+            <li class="nav-item ">
+                <a href="/personal/my-record" class="d-flex nav-link" >
+                    <div class="icon nav-icon icon-memo icon-color-orange mr-5"></div>
+                    <span class=" text-white fs-16">{{'navbar.my_record' | translate}}</span>
+                </a>
+            </li>
+
+            <li class="nav-item ">
+                <a href="#" class="d-flex nav-link" >
+                    <div class="icon nav-icon icon-challenge icon-color-orange mr-5"></div>
+                    <span class=" text-white fs-16">{{'navbar.challenge' | translate}}</span>
+                </a>
+            </li>
+
+            <li class="nav-item ">
+                <a href="#" class="d-flex nav-link" >
+                    <div class="icon nav-icon icon-info icon-color-orange mr-5"></div>
+                    <div class="noti-icon">{{notificationsCount}}</div>
+                    <span class=" text-white fs-16">{{'navbar.notice' | translate}}</span>
+                </a>
+            </li>
+        </ul>
+        <div ngbDropdown>
+            <button class="btn" type="button" ngbDropdownToggle id="dropdownMenuButton">
+                <div class="icon nav-icon icon-menu icon-color-orange"></div>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end bg-gray" ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+                <a class="nav-link text-white px-32 py-22" href="#" ngbDropdownItem >{{'navbar.my_record' | translate}}</a>
+                <a class="nav-link text-white px-32 py-22" href="#" ngbDropdownItem>{{'navbar.weight_chart' | translate}}</a>
+                <a class="nav-link text-white px-32 py-22" href="#" ngbDropdownItem>{{'navbar.goal' | translate}}</a>
+                <a class="nav-link text-white px-32 py-22" href="#" ngbDropdownItem>{{'navbar.selected_course' | translate}}</a>
+                <a class="nav-link text-white px-32 py-22" href="/general/column-list" ngbDropdownItem>{{'navbar.column_list' | translate}}</a>
+                <a class="nav-link text-white px-32 py-22" href="#" ngbDropdownItem>{{'navbar.settings' | translate}}</a>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+
+</nav>

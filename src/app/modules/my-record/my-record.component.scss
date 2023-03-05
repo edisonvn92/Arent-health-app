@@ -1,0 +1,92 @@
+@import '../../styles/color';
+.container {
+    width: 75%;
+}
+.navigation-card {
+    aspect-ratio: 1/1;
+    border-radius: 0;
+    border: 1px solid $yellow;
+    .card-body {
+        
+        p {
+            filter: brightness(100%);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            white-space: nowrap
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: black;
+            filter: grayscale(100%) brightness(40%);
+        }
+        button {
+            border-color: $orange;
+            height: 24px;
+            width: 160px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 0;
+            transform: translate(-50%, 0);
+            line-height: 1;
+            border-radius: 0;
+            font-size: 15px !important;
+        }
+    }
+       
+}
+#myRecord {
+    .content {
+        height: 304px;
+    }
+    
+
+}
+#myExercise {
+    .content {
+        height: 264px;
+    } 
+}
+
+#myDiary {
+    .content {
+        padding: 0;
+    } 
+}
+.group-title {
+    width: 96px;
+}
+
+.select-range-btn {
+    background-color: $white;
+    color: $yellow;
+    border-radius: 11px;
+    height: 24px;
+    width: 56px;
+    padding: 0;
+    margin-left: 16px;
+    font-size: 15px;
+    &:active, &:hover {
+        background-color: $yellow;
+        color: $white;
+    }
+}
+
+.exercise-list {
+    height: 192px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar-track {
+        background-color: $gray;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $yellow;
+    }
+}

@@ -21,10 +21,10 @@ $colors: (
 @mixin color() {
     @each $colorText, $color in $colors {
         .text-#{$colorText} {
-            color: #{$color};
+            color: #{$color} !important;
         }
         .icon-color-#{$colorText}, .bg-#{$colorText} {
-            background-color: #{$color};
+            background-color: #{$color} !important;
         }
     }
 }

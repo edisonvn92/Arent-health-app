@@ -1,1 +1,74 @@
-<p>my-record works!</p>
+<div class="container p-0 pt-56">
+    <div class="row">
+        <div class="col-4" *ngFor="let item of navigationList">
+            <div class="card navigation-card bg-yellow p-24">
+                <div class="card-body">
+                    <img [src]="item.imageSrc">
+                    <p class="fs-25 text-yellow en-font">{{item.title | translate | uppercase}}</p>
+                    <button (click)="scrollToTarget(item.navigationTarget)" class="btn bg-orange text-white fs-16">{{item.btnText | translate}}</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <div class="pt-56" id="myRecord">
+        <div  class="bg-black-500 px-24 py-16 content">
+            <div class="d-flex">
+                <div class="text-white fs-15 en-font group-title">{{'en.body_record' | translate | uppercase}}</div>
+                <div class="text-white fs-22 en-font group-date">{{currentDate}}</div>
+            </div>
+            <app-body-fat-chart [divHeight]="'200px'" [backgroundColorClass]="'bg-black-500'"></app-body-fat-chart>
+            <div class="d-flex">
+                <button class="btn select-range-btn">{{'base.day' | translate}}</button>
+                <button class="btn select-range-btn">{{'base.week' | translate}}</button>
+                <button class="btn select-range-btn">{{'base.month' | translate}}</button>
+                <button class="btn select-range-btn" active>{{'base.year' | translate}}</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-56" id="myExercise" >
+        <div class="bg-black-500 px-24 py-16 content">
+            <div class="d-flex">
+                <div class="text-white fs-15 en-font group-title">{{'en.my_exercise' | translate | uppercase}}</div>
+                <div class="text-white fs-22 en-font group-date">{{currentDate}}</div>
+            </div>
+            <div class="exercise-list">
+                <div class="row pr-32">
+                    <div class="col-6 px-20" *ngFor="let item of exerciseList">
+                        <app-exercise-info [data]="item"></app-exercise-info>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center pt-56" id="myDiary">
+        <div class="content">
+            <div class="fs-22 en-font">{{'en.my_diary' | translate | uppercase}}</div>
+            <div class="diary-list">
+                <div class="row">
+                    <div class="col-3 p-6" *ngFor="let item of diaryList">
+                        <app-diary-card [data]="item"></app-diary-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    <div class="d-flex mt-24 mb-64 justify-content-center">
+        <button class="btn customized-btn">
+            {{'record.see_more_of_my_diary' | translate}}
+        </button>
+    </div>
+        
+</div>
+
+
+
+
+

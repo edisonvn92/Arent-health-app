@@ -5,6 +5,11 @@
     -webkit-mask-size: contain;
     padding: auto;
 }
+
+.icon-small {
+    width: 15px;
+    height: 15px;
+}
   
 .icon-challenge {
     mask-image: url('../../assets/icons/icon_challenge.svg');
@@ -30,3 +35,6 @@
     mask-image: url('../../assets/icons/icon_menu.svg');
 }
 
+.icon-chevron-up {
+    mask-image: url('../../assets/icons/icon_chevron_up.svg');
+}
